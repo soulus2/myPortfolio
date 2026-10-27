@@ -1,0 +1,10 @@
+.next
+node_modules
+pnpm-lock.yaml
+playwright-report
+test-results
+next-env.d.ts
+# Owner-maintained documents
+ARCHITECTURE.md
+CLAUDE.md
+DECISIONS.md

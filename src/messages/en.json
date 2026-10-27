@@ -1,0 +1,53 @@
+{
+  "Metadata": {
+    "siteName": "Portfolio",
+    "description": "Engineering, IT, computer science, graphic design, 3D modeling and startups in one portfolio."
+  },
+  "Shell": {
+    "skipToContent": "Skip to content",
+    "home": "Home",
+    "sitemap": "All sections",
+    "underConstruction": "This site is under construction."
+  },
+  "Sections": {
+    "about": "About",
+    "skills": "Skills",
+    "now": "Now",
+    "future": "Future",
+    "work": "Work",
+    "engineering": "Engineering",
+    "it": "IT",
+    "computerScience": "Computer Science",
+    "design": "Design",
+    "threeD": "3D",
+    "startups": "Startups",
+    "blog": "Blog",
+    "vlog": "Vlog",
+    "contact": "Contact"
+  },
+  "Home": {
+    "title": "Portfolio",
+    "intro": "Engineering · IT · Computer science · Graphic design · 3D modeling · Startups"
+  },
+  "Placeholder": {
+    "comingSoon": "This section is being built."
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "ka": "ქართული"
+  },
+  "ThemeToggle": {
+    "toDark": "Switch to dark theme",
+    "toLight": "Switch to light theme"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has moved.",
+    "backHome": "Back to home"
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "retry": "Try again"
+  }
+}

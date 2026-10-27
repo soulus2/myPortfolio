@@ -1,0 +1,23 @@
+version: 2
+updates:
+  # The npm ecosystem also reads pnpm lockfiles.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      # Next.js pins exact React versions, so these move together.
+      nextjs:
+        patterns:
+          - next
+          - eslint-config-next
+          - react
+          - react-dom
+          - "@types/react"
+          - "@types/react-dom"
+      dev-tooling:
+        dependency-type: development
+        update-types:
+          - minor
+          - patch

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* `dark:` follows the resolved theme the theme script writes to
+   <html data-theme>, so the toggle can override the OS setting. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Placeholder palette until the Phase 2 design system. */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  color-scheme: dark;
+}
+
+/* Without JavaScript the theme script never runs; follow the OS instead. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  /* System fonts until Phase 2 picks a Georgian + Latin pairing; every major
+     OS ships a system font with Georgian glyphs. */
+  --font-sans:
+    system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans",
+    "Noto Sans Georgian", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
